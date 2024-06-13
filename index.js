@@ -114,3 +114,35 @@ switch (selectColor) {
         alert("Для інших кольорів не знаю дій");
         break;
 }
+
+const chooseNumber1 = prompt("Оберіть перше число:");
+const chooseNumber2 = prompt("Оберіть друге число:");
+const chooseAction = prompt("Оберіть дію над числами (ви також можете поділити на 0): +, -, *, /");
+const number1 = Number(chooseNumber1);
+const number2 = Number(chooseNumber2);
+let action;
+switch (chooseAction) {
+    case "+":
+        action = number1 + number2;
+        alert(`Сума чисел = ${action}`);
+        break;
+
+    case "-":
+        action = number1 - number2;
+        alert(`Віднімання чисел = ${action}`);
+        break;
+
+    case "*":
+        action = number1 * number2;
+        alert(`Множення чисел = ${action}`);
+        break;
+
+    case "/":
+        action = number1 / number2;
+        alert(`Ділення чисел = ${action}`);
+        break;
+
+    default:
+        alert("Ви неправильно обрали(");
+        break;
+}
